@@ -1,5 +1,8 @@
 # -*- coding: utf-8 -*-
 
+import sys
+sys.stdin = open("1983input.txt", "r")
+
 # 조교의 성적 매기기
 
 # 학점은 상대평가로 총 10개(A+ ~ D0)
@@ -17,5 +20,33 @@
 
 count = int(input())
 
-N_, K_ = input().split(' ')
-print(N_, K_)
+for test_count in range(1, count+1):
+    N_, K_ = tuple(map(int, input().split(' ')))
+    
+    scores = [] # students' scores
+    results = [] # final scores of students
+    sorted_lists = []
+    
+    ranking = [] #rank the students
+   
+    for _ in range(N_):
+        scores.append( list(map(int, input().split())))
+    # print('#{} {} {} {}'.format(test_count, N_, K_, scores))
+    # #1 10 2 [[87, 59, 88], [99, 94, 78], [94, 86, 86], [99, 100, 99], [69, 76, 70], 
+    # [76, 89, 96], [98, 95, 96], [74, 69, 60], [98, 84, 67], [85, 84, 91]]
+    
+    for idx, score in enumerate(scores):
+        results.append(score[0] * 0.35 + score[1] * 0.45 + score[2] * 0.2)
+    
+    sorted_lists.copy(results)
+    
+    for sorted_result in sorted_lists:
+        ranking.append(results.index(sorted_result))
+
+    print(ranking)
+
+    # for _ in range(N_):
+    #     ranking.append(results.index(max(results)))
+    #     results.remove(max(results))
+    
+    # print(ranking)
