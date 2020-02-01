@@ -15,3 +15,5 @@ for idx, number in enumerate(numbers):
     string = list(range(1, number+1))
     final_sum = sum(string[::2]) - sum(string[1::2])
     print('#{0} {1}'.format(idx+1, final_sum))
+
+    # 여기가 끝입니다.
