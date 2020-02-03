@@ -22,11 +22,9 @@ count = int(input())
 
 for test_count in range(1, count+1):
     N_, K_ = tuple(map(int, input().split(' ')))
-    
+    note = ('A+', 'A0', 'A-', 'B+', 'B0', 'B-', 'C+', 'C0', 'C-', 'D0')
     scores = [] # students' scores
     results = [] # final scores of students
-    sorted_lists = []
-    
     ranking = [] #rank the students
    
     for _ in range(N_):
@@ -38,15 +36,18 @@ for test_count in range(1, count+1):
     for idx, score in enumerate(scores):
         results.append(score[0] * 0.35 + score[1] * 0.45 + score[2] * 0.2)
     
-    sorted_lists.copy(results)
-    
-    for sorted_result in sorted_lists:
-        ranking.append(results.index(sorted_result))
+    cp_results = results[:]
+    cp_results.sort()
+    cp_results = cp_results[::-1]
+    print(results)
+    print(cp_results)
 
+    for cp_ in cp_results:
+        ranking.append(results.index(cp_))
     print(ranking)
+    # [7, 4, 0, 8, 9, 5, 2, 1, 6, 3]
 
-    # for _ in range(N_):
-    #     ranking.append(results.index(max(results)))
-    #     results.remove(max(results))
+    # 몇 등?
+    rank = ranking.index(K_-1) // (N_ // 10)
     
-    # print(ranking)
+    print('#{} {}'.format(test_count, note[rank]))
