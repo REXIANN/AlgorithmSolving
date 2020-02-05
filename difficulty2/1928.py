@@ -25,7 +25,7 @@ buffer_24bit = {
     '3': 55, '4':56, '5':57, '6':58, '7':59,
     '8': 60, '9':61, '+':62, '/':63
 }
-arr = [0, 1, 2, 4, 8, 16]
+
 # 10진수를 2진수로 0b없이 바꾸는 방법
 # format(42, 'b') = 101010
 # '{:08}'.format(7,'b') = 0000 0007
@@ -33,27 +33,31 @@ arr = [0, 1, 2, 4, 8, 16]
 tc = int(input())
 
 for test_count in range(1, tc + 1):
-    print('#{}'.format(test_count))
+    print('#{}'.format(test_count),end=" ")
     encoded_string = input()
     binary_string = ''
-    decoded_string = 'for test'
+    decoded_string = 'for test'          
 
-    def decimal_to_6bit(number):
-        for i in range(1<<6):
-            six_bit_sum = ''
-            for j in range(6):
-                six_bit_sum += '1' if i & (1<<j) else '0'
-        
-        return six_bit_sum
+    for encoded_char in encoded_string:
+       binary_string += '{:06b}'.format(buffer_24bit[encoded_char])
+    #    binary_string_test = '{:06b}'.format(buffer_24bit[encoded_char])
+    #    binary_string_int = int(binary_string_test, 2) 
+    #    print(binary_string_int)
 
-
-    asdf = decimal_to_6bit(7)
-    print(asdf)               
-
-
+    for i in range((len(encoded_string) * 3) // 4):
+        decimal_string = binary_string[8 * i : 8 * i + 8]
+        original_string = int(decimal_string, 2)
+        print(chr(original_string), end="")
+    print()
 
     
-    # for encoded_char in encoded_string:
-    #    #binary_string += str(buffer_24bit[encoded_char])
-    #    binary_string += format(buffer_24bit[encoded_char], 'b')
-    # print(binary_string)
+
+    #######################################
+    # for i in range(1<<len(arr)):
+    #         six_bit_sum = ''
+    #         for j in range(len(arr)):
+    #             if (i & (1 << j)): 
+    #                 six_bit_sum += '1'
+    #             else:
+    #                 six_bit_sum += '0'
+    #         #print(six_bit_sum)
