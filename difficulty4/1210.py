@@ -4,10 +4,35 @@ sys.stdin = open("1210input.txt", "r")
 
 for test_count in range(1, 11):
     number = int(input())
-    matrix = []
+    matrix = [[0 for _ in range(102)]]
     for _ in range(100):
-        matrix.append(list(map(int,input().split())))
+        matrix.append([0] + list(map(int,input().split())) + [0])
+
+    ends = [idx for idx, line in enumerate(matrix[1]) if line]
+    start = matrix[100].index(2)
+    row = 101
+    idx = ends.index(start)
+    while True:
+        row -= 1
+        if matrix[row][start - 1] == 1:
+            idx -= 1
+            start = ends[idx]
+            continue
+
+        if matrix[row][start + 1] == 1:
+            idx += 1
+            start = ends[idx]
+            continue
+
+        if matrix[row - 1][start] == 0:
+            print('#{} {}'.format(number, ends[idx] - 1))
+            break
+
+        
+
     
-    front_line = [idx for idx, line in enumerate(matrix[0]) if line]
-    end_point = matrix[99].index(2)
+    
+    
+    
+    
     

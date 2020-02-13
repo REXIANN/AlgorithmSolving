@@ -19,7 +19,8 @@ for test_count in range(1, tc + 1):
     matrix.extend([[0] + list(map(int, input().split())) + [0] for _ in range(N_)])
     matrix.append([0] * (N_ + 2))
     sub_matrix = set()
-    sum_list = []
+    sub_lists_sum = []
+    
     dr = [0, 1]
     dc = [1, 0]
     direction, i, j = 0, 1, 1
@@ -58,11 +59,58 @@ for test_count in range(1, tc + 1):
                         break
 
                 sub_matrix.add((sub_col, sub_row))
-    sub_matrix_list = sorted(list(sub_matrix))
-    for sub_list in sub_matrix_list:
-        sum_list.append(sub_list[0] * sub_list[1])
     
     
-    print('#',test_count, len(sub_matrix), sub_matrix)
-    print(sub_matrix_list)
-    print(sum_list)
+    sub_lists = list(sub_matrix)
+    for subs in sub_lists:
+        sub_lists_sum.append(subs[0] * subs[1])
+    #print('sub_lists:', sub_lists)
+    
+    for sub in subs:
+        if subs.count(sub) >= 2:
+            pass
+    
+    #print('sub_lists_sum:', sub_lists_sum)
+    sub_lists_srtd = sub_lists_sum[:]
+    sub_lists_srtd.sort()
+    #print('sub_lists_srtd:', sub_lists_srtd)
+
+    final_list = []
+    for i in range(len(sub_lists)):
+        final_list.append(sub_lists[sub_lists_sum.index(sub_lists_srtd[i])])
+    #print('final_list:', final_list, '\n')
+
+    value = -1
+    control = False
+    for val in sub_lists_sum:
+        if sub_lists_sum.count(val) >= 2:
+            value = val
+            control = True
+            break
+    while control:
+        indexing = []
+        for idx, val in enumerate(sub_lists_sum):
+            if val == value:
+                indexing.append(idx)
+        #print(indexing)
+        if sub_lists[indexing[0]][0] >  sub_lists[indexing[1]][0]:
+                asdf = sub_lists[indexing[0]][0] * sub_lists[indexing[0]][1]
+                #print(asdf)
+                indexxx = sub_lists_srtd.index(asdf)
+                #print(indexxx)
+                #print(final_list[indexxx], sub_lists[indexing[1]])
+                final_list[indexxx] = sub_lists[indexing[1]]
+        else:
+            asdf = sub_lists[indexing[0]][0] * sub_lists[indexing[0]][1]
+            #print(asdf)
+            indexxx = sub_lists_srtd.index(asdf) + 1
+            #print(indexxx)
+            final_list[indexxx] = sub_lists[indexing[0]]
+        break
+
+    print('#{}'.format(test_count), end=" ")    
+    #print('final_list:', final_list, '\n')
+    for xxx in final_list:
+        for xx in xxx:
+            print(xx, end=" ")
+    print()    
