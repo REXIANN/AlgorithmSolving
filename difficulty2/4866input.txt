@@ -1,0 +1,7 @@
+6
+print('{} {}'.format(1, 2))
+N, M = map(int, input().split())
+print('#{} {}'.format(tc, find())
+{{{{('{}{}(()))))')}}}}
+pr{int{and(so(go(to)the)orange)for}theloop}
+{()}{()}{()}}}

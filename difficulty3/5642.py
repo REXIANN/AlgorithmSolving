@@ -12,16 +12,15 @@ tc = int(input())
 for test_count in range(1, tc + 1):
     N_ = int(input())
     num_list = list(map(int, input().split()))
-    sum_ = max(num_list)
-    max_sum = 0
+    sum_ = 0
+
     for i in range(N_ - 1):
         for j in range(i, N_):
             sum_ = sum_ + num_list[j]
-            if sum_ > max_sum:
-                max_sum = sum_
+            num_list.append(sum_)
         sum_ = 0
 
-    print('#{} {}'.format(test_count, max_sum))
+    print('#{} {}'.format(test_count, max(num_list)))
 
 
 
