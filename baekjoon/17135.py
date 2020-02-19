@@ -30,11 +30,13 @@ for test_count in range(1, tc + 1):
                     for n in range(-(m//2), m//2 + 1, 1):
                         row_in, col_in = (row + 1 + m//2 - abs(n)), (i + n)
                         print(row_in, col_in)
+                
                 # for archer j
                 for m in range(1, 2 * D, 2):
                     for n in range(-(m//2), m//2 + 1, 1):
                         row_in, col_in = (row + 1 + m//2 - abs(n)), (j + n)
                         print(row_in, col_in)
+                
                 # for archer k
                 for m in range(1, 2 * D, 2):
                     for n in range(-(m//2), m//2 + 1, 1):
