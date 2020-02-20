@@ -1,36 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ccf54589-7598-4dc2-a48f-c101b3aa7ef2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/baekjoon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14499.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14499input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14502.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/14502input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4874.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4874input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4875.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4875input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4880.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4880input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4881.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty2/4881input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/1224.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/1224input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17135.py" beforeDir="false" afterPath="$PROJECT_DIR$/17135.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/17135input.txt" beforeDir="false" afterPath="$PROJECT_DIR$/17135input.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty3/1220.py" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/1220.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty3/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty3/testinput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/testinput.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty4/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty4/9482.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty4/9482input.txt" beforeDir="false" />
-    </list>
+    <list default="true" id="ccf54589-7598-4dc2-a48f-c101b3aa7ef2" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +12,7 @@
     <session id="738377995">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
@@ -251,7 +223,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25266525" />
@@ -269,7 +240,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.39072496" />
+      <window_info anchor="right" id="Run" order="3" weight="0.39072496" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">

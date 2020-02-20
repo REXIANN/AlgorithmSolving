@@ -7,6 +7,8 @@ tc = int(input())
 for _ in range(tc):
     N, M = map(int, input().split())
     matrix = [list(map(int, input().split())) for _ in range(N)]
-
     print(N, M)
     pprint(matrix)
+
+    
+    
