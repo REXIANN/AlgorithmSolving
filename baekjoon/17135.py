@@ -1,49 +1,48 @@
 # 17135.py 캐슬디펜스
 from pprint import pprint
+import copy
 import sys
 sys.stdin = open("17135input.txt", "r")
 
-def is_end(row, col):
-    if (row + 1 + i//2 - abs(j)) < 0 or  (row + 1 + i//2 - abs(j)) >= N:
-        return False
-    if col + j < 0 or col + j >= M:
-        return False
-    return True 
 
 tc = int(input())
 for test_count in range(1, tc + 1):
     N, M, D = map(int, input().split())
     matrix = [list(map(int, input().split())) for _ in range(N)]
-    # pprint(matrix)
-
-    # this is for Nth movement for soldiers or archers
-    # for i in range(N):
-    row, col = -1, -1
+    count = 0
+    count_list = []
+    final_list = []
+    flag = 0
+    row, col = N-1, -1
     for i in range(M - 2):
         for j in range(i + 1, M - 1):
             for k in range(j + 1, M):
-                # possible positions for three archers
-                print(i,j,k)
+                trial_list = [i, j, k]
+                copy_mat = copy.deepcopy(matrix)
+                for l in range(N -1, -1, -1):
+                    for asdf in trial_list:
+                        for m in range(1, 2 * D, 2):
+                            for n in range(-(m // 2), m // 2 + 1, 1):
+                                row_in, col_in = (l - (m // 2 - abs(n))), (asdf + n)
+                                if 0 <= row_in < N and 0 <= col_in < M and copy_mat[row_in][col_in] >= 1:
+                                    copy_mat[row_in][col_in] += 1
+                                    flag = 1
+                                    break
+                            if flag:
+                                flag = 0
+                                break
 
-                # for archer i
-                for m in range(1, 2 * D, 2):
-                    for n in range(-(m//2), m//2 + 1, 1):
-                        row_in, col_in = (row + 1 + m//2 - abs(n)), (i + n)
-                        print(row_in, col_in)
-                
-                # for archer j
-                for m in range(1, 2 * D, 2):
-                    for n in range(-(m//2), m//2 + 1, 1):
-                        row_in, col_in = (row + 1 + m//2 - abs(n)), (j + n)
-                        print(row_in, col_in)
-                
-                # for archer k
-                for m in range(1, 2 * D, 2):
-                    for n in range(-(m//2), m//2 + 1, 1):
-                        row_in, col_in = (row + 1 + m//2 - abs(n)), (k + n)
-                        print(row_in, col_in)
-                        #CASE DONE up to here
+                    for x in range(N):
+                        for y in range(M):
+                            if copy_mat[x][y] > 1:
+                                count += 1
+                                copy_mat[x][y] = 0
+                    count_list.append(count)
+                    count = 0
 
+                final_list.append(sum(count_list))
+                count_list.clear()
+    print('{}'.format(max(final_list)))
 
 
 

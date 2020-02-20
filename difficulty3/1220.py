@@ -6,11 +6,9 @@ sys.stdin = open("1220input.txt", "r")
 tc = 11
 for t_count in range(1, tc):
     n_ = input()
-    matrix = []
+    matrix = [input().replace(' ','') for _ in range(100)]
     lock_count = 0
-    for i in range(100):
-        matrix.append(input().replace(' ',''))
-    
+   
     # print(matrix)
     # ['1000000020001011020010202210000010020000012000110000200001000002000200000000010000000000100000000201', 
     #  '0000000000100200000200100000120010000100000000001020000001200000000120100001000010000000000000010000', 
@@ -31,4 +29,13 @@ for t_count in range(1, tc):
         #print(matrix_zip[idx])
     print('#{} {}'.format(t_count,lock_count))
 
-                
+
+
+
+
+
+
+
+
+
+

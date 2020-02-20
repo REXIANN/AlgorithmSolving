@@ -2,32 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c7d098e5-4a4f-4fbc-8987-0d4c5a752c55" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4866.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4866input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4869.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4869input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4871.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4871input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4873.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/4873input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty3/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty3/6190.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty3/6190input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty3/6485input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/1226.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/1226input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/1227.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty4/1227input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty6/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty6/1267.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty6/1267input.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../difficulty6/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../difficulty3/.idea/difficulty3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/.idea/difficulty3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4874.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4874input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4875.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4875input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4880.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4880input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4881.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/4881input.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../difficulty4/1224.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../difficulty4/1224input.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../baekjoon/17135.py" beforeDir="false" afterPath="$PROJECT_DIR$/../baekjoon/17135.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../difficulty3/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../difficulty3/1220.py" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/1220.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../difficulty3/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../difficulty3/testinput.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty3/testinput.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../difficulty4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../difficulty4/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../difficulty4/9482.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../difficulty4/9482input.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -39,39 +32,62 @@
     <session id="738055732">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
-          <entry key="project.open.time.0" value="2" />
-          <entry key="project.opened" value="2" />
+          <entry key="project.closed" value="7" />
+          <entry key="project.open.time.0" value="6" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.opened" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="py" value="7" />
-          <entry key="txt" value="5" />
+          <entry key="py" value="15" />
+          <entry key="txt" value="10" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PLAIN_TEXT" value="5" />
-          <entry key="Python" value="7" />
+          <entry key="PLAIN_TEXT" value="10" />
+          <entry key="Python" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="py" value="2403" />
-          <entry key="txt" value="116" />
+          <entry key="py" value="7830" />
+          <entry key="txt" value="266" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PLAIN_TEXT" value="116" />
-          <entry key="Python" value="2403" />
+          <entry key="PLAIN_TEXT" value="266" />
+          <entry key="Python" value="7830" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/4881.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="522">
+              <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+              <folding>
+                <marker date="1582177435919" expanded="true" signature="104:822" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/4881input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -94,12 +110,22 @@
         <option value="$PROJECT_DIR$/4869input.txt" />
         <option value="$PROJECT_DIR$/4869.py" />
         <option value="$PROJECT_DIR$/4871.py" />
+        <option value="$PROJECT_DIR$/4874input.txt" />
+        <option value="$PROJECT_DIR$/4874.py" />
+        <option value="$PROJECT_DIR$/4875input.txt" />
+        <option value="$PROJECT_DIR$/4875.py" />
+        <option value="$PROJECT_DIR$/4880input.txt" />
+        <option value="$PROJECT_DIR$/4880.py" />
+        <option value="$PROJECT_DIR$/4881.ㅔㅛ.py" />
+        <option value="$PROJECT_DIR$/4881input.txt" />
+        <option value="$PROJECT_DIR$/4881.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="228" />
+    <option name="y" value="-14" />
+    <option name="width" value="1449" />
     <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -125,8 +151,8 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../difficulty4" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../baekjoon" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -140,49 +166,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.4871">
-    <configuration name="4866" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="difficulty2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4866.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="4869" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="difficulty2" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4869.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python.4881">
     <configuration name="4871" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="difficulty2" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -204,7 +188,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="4873" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="4874" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="difficulty2" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -216,7 +200,70 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4873.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4874.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4875" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="difficulty2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4875.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4880" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="difficulty2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4880.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="4881" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="difficulty2" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/4881.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -226,17 +273,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.4866" />
-      <item itemvalue="Python.4873" />
       <item itemvalue="Python.4871" />
-      <item itemvalue="Python.4869" />
+      <item itemvalue="Python.4874" />
+      <item itemvalue="Python.4875" />
+      <item itemvalue="Python.4880" />
+      <item itemvalue="Python.4881" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.4881" />
+        <item itemvalue="Python.4880" />
+        <item itemvalue="Python.4875" />
+        <item itemvalue="Python.4874" />
         <item itemvalue="Python.4871" />
-        <item itemvalue="Python.4869" />
-        <item itemvalue="Python.4873" />
-        <item itemvalue="Python.4866" />
       </list>
     </recent_temporary>
   </component>
@@ -254,12 +303,12 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.297593" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.21022129" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info id="Debug" order="3" weight="0.20735608" />
+      <window_info id="Debug" order="3" weight="0.28944564" />
       <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Python Console" order="1" />
       <window_info anchor="bottom" id="Terminal" order="2" />
@@ -272,11 +321,46 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Run" order="3" weight="0.46389496" />
+      <window_info anchor="right" id="Run" order="3" weight="0.4392324" />
     </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="1" weight="0.29700854" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info id="Debug" order="3" visible="true" weight="0.16950959" />
+      <window_info anchor="bottom" id="Version Control" order="0" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Python Console" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" />
+      <window_info anchor="bottom" id="Cvs" order="6" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="8" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info active="true" anchor="right" id="Run" order="3" visible="true" weight="0.3065032" />
+    </layout-to-restore>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4880.py</url>
+          <line>29</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/4881.py</url>
+          <line>39</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/4866input.txt">
@@ -325,9 +409,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="7" column="9" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
-          <folding>
-            <element signature="e#17#30#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -335,9 +416,77 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
           <caret line="3" selection-start-line="3" selection-end-line="17" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://C:/Program Files/Python35/Lib/codecs.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="320" selection-start-line="320" selection-end-line="320" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4874input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4874.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4875input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4875.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4880input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="2" selection-start-line="8" selection-start-column="2" selection-end-line="8" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4881.ㅔㅛ.py" />
+    <entry file="file://$PROJECT_DIR$/4880.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="28" selection-start-line="6" selection-start-column="28" selection-end-line="6" selection-end-column="28" />
           <folding>
-            <marker date="1581647170845" expanded="true" signature="67:72" ph="..." />
+            <marker date="1582166338171" expanded="true" signature="89:307" ph="..." />
+            <marker date="1582166338171" expanded="true" signature="333:605" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4881.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="60" lean-forward="true" selection-start-line="29" selection-start-column="60" selection-end-line="29" selection-end-column="60" />
+          <folding>
+            <marker date="1582177435919" expanded="true" signature="104:822" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/4881input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
