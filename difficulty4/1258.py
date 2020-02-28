@@ -12,7 +12,6 @@ sys.stdin = open("1258input.txt", "r")
 
 
 tc = int(input())
-
 for test_count in range(1, tc + 1):
     N_ = int(input())
     matrix = [[0] * (N_ + 2)]
