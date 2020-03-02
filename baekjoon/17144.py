@@ -16,12 +16,9 @@ for test_count in range(tc):
 
     for h in range(T):
         matr = [[0 for _ in range(C)] for _ in range(R)]
-
         for i in range(R):
-
             for j in range(C):
-                if matrix[i][j] < 1: continue
-                
+                if matrix[i][j] < 1: continue 
                 matr[i][j] += matrix[i][j]
 
                 for k in range(4):

@@ -2,21 +2,18 @@
 import sys
 sys.stdin = open("1486input.txt", "r")
 
-flag = 0
-def backtrack(H, a, k, N, maxnum, s):
+def backtrack(a, k, N, s):
+    c = [0] * N
+    if s > B and maxnums[0] > s:
+        maxnums[0] = s
+        return 
 
     if k == N:
-        
-        if s > B and maxnum > s: 
-            maxnum = s 
-        print(a, 'sum=', sum(a))
-    
+        return 
     else:
-        c = [0] * N
-        
         in_perm = [False] * N
         for i in range(k):
-            in_perm[i] = True
+            in_perm[a[i]] = True
         
         n_candid = 0
         for i in range(N):
@@ -26,16 +23,21 @@ def backtrack(H, a, k, N, maxnum, s):
 
         for i in range(n_candid):
             a[k] = c[i]
-            if s + H[a[k]] < maxnum:
-                backtrack(H, a, k+1, N, maxnum, s + H[a[k]])
-            else:
-                print(s + H[a[k]])
-        
+            backtrack(a, k+1, N, s+H[a[k]])
+            # if maxnums: 
+            #     if s + H[a[k]] < maxnums[0]:
+            #         backtrack(a, k+1, N, s + H[a[k]])
+            #     elif s >= B and maxnums[0] >= s:
+            #         maxnums[0] = s
+            # else:
+            #     backtrack(a, k+1, N, s + H[a[k]])    
 
 for tc in range(int(input())):
     N, B = map(int, input().split())
     H = list(map(int, input().split()))
-    print(N, B, H)
-    a = [0] * len(H)
-    backtrack(H, a, 0, sum(H), len(H), 0)
+    # print(N, B, H)
+    
+    maxnums = [sum(H)]
+    backtrack([0] * len(H), 0, len(H), 0)
+    print('#{} {}'.format(tc+1, maxnums[0] - B))
 

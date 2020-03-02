@@ -12,13 +12,18 @@ for test_count in range(1, tc + 1):
     count_list = []
     final_list = []
     flag = 0
+
     row, col = N-1, -1
+    # 궁수 세 명의 포지션 정하기
     for i in range(M - 2):
         for j in range(i + 1, M - 1):
             for k in range(j + 1, M):
                 trial_list = [i, j, k]
                 copy_mat = copy.deepcopy(matrix)
+                
+                # 궁수가 한칸씩 올라감
                 for l in range(N -1, -1, -1):
+                    #모든 궁수가 적을 찾아서 쏘는건데
                     for asdf in trial_list:
                         for m in range(1, 2 * D, 2):
                             for n in range(-(m // 2), m // 2 + 1, 1):
