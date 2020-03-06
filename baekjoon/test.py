@@ -1,14 +1,27 @@
 # for test
-import math
+from pprint import pprint
 import sys
 sys.stdin = open("testinput.txt", "r")
 
-for tc in range(int(input())):
-    N, K = map(int, input().split())
-    X = input()
-    X += X[0:N//4]
-    L = sorted([int(i,16) for i in list(set(X[i:i+N//4] for i in range(N+1)))])
-    print('#{} {}'.format(tc+1,L[len(L)-K]))
+def turn(matrix, t):
+    mat = [[0] * 3 for _ in range(3)]
+    if t == '-':
+        for i in range(3):
+            for j in range(3):
+                mat[2-i][j] = matrix[j][i]
+    elif t == '+':
+        for i in range(3):
+            for j in range(3):
+                mat[i][j] = matrix[2-j][i]
+    return mat
 
+
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+mato = [[0] * 3 for _ in range(3)]
+pprint(turn(matrix,'+'))
 
         

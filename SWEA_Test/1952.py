@@ -6,14 +6,13 @@ sys.stdin = open("1952input.txt", "r")
 def swim(k, s, d, m, m3):
     global minV
     if k >= 13:
-        if minV > s:
-            minV = s
+        minV = s if minV > s else minV
     elif minV < s:
         return
     else:
         swim(k+1, s + min(d*months[k], m), d, m, m3)
         swim(k+3, s + m3, d, m, m3)
-    
+
 
 for tc in range(int(input())):
     d, m, m3, y = map(int, input().split())
