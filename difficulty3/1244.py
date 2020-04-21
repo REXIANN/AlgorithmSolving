@@ -2,17 +2,23 @@
 import sys
 sys.stdin = open("1244input.txt", "r")
 
+def backtrack(k, N, a):
+    if k == N:
+        num = int(''.join(map(str, a)))
+        global result
+        result = num if num > result else result
+    else:
+        for i in range(0, len(a) - 2, 1):
+            for j in range(i + 1, len(a) - 1, 1):
+                a[i], a[j] = a[j], a[i]
+                backtrack(k + 1, N, a)
+                a[j], a[i] = a[i], a[j] 
+
+
 for tc in range(int(input())):
     N, T = input().split()
     N = [int(i) for i in N]
-    print(tc+1, '\n', N)
-
-    minI, maxI = len(N) - 1, len(N) - 2
-    for i in range(len(N) - 1, 0, -1):
-        if N[i] >= N[i - 1]: maxI = i; break
-    for j in range(len(N) - 2):
-        if N[j] <= N[j + 1]: minI = j; break
-    
-    N[minI], N[maxI] = N[maxI], N[minI]
-    print(N)
+    result = 0
+    backtrack(0, T, N)
+    print('#{} {}'.format(tc + 1, result))
     
