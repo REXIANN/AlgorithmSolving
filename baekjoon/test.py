@@ -8,11 +8,14 @@
 
 def dfs(M, a, k):
     if k == len(M):
-        print(a)
+        print()
     else:
         for i in range(3):
-            a[k] = M[k][i]
+            num = M[k][i]
+            M[k][i] = 0
+            if k == 2: print(M)
             dfs(M, a, k + 1)
+            M[k][i] = num
 
 M = [
     [1, 2, 3],

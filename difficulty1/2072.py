@@ -9,12 +9,12 @@ for _ in range(count_num):
 
 for i in range(count_num):
     num_str = []
-    sum = 0
-    num_str = num_list[i].split(' ')
+    sum_ = 0
+    num_str = num_list[i].split()
  
     for j in num_str:
         if int(j) % 2 == 1:
-            sum += int(j) 
+            sum_ += int(j) 
           
     result_list.append(sum)
 
