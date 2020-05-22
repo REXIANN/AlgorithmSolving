@@ -6,6 +6,7 @@ def win(L):
     for l in L:
         if L.count(l) == 3:
             return 1
+    
     L = list(set(L))
     if len(L) >= 3:
         for i in range(len(L) - 2):

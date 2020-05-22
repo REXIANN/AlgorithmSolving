@@ -1,10 +1,28 @@
-# from itertools import combinations
-# import sys
-# sys.stdin = open("testinput.txt", "r")
-# able_list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-# for ables in list(combinations(able_list, 6)):
-#     for able in list(combinations(ables, 3)):
-#         print(able)
+import time
+z = (1, 2, 3, 6, 5, 9)
 
-a, b = 1, 0
-print(a | b, a & b)
+a = []
+b = []
+c = []
+d = []
+c_append = c.append
+
+start_time = time.time()
+for i in range(1000000):
+    a.append(i)
+print(time.time() - start_time)
+
+start_time = time.time()
+for i in range(1000000):
+    b += [i]
+print(time.time() - start_time)
+
+start_time = time.time()
+for i in range(1000000):
+    c_append(i)
+print(time.time() - start_time)
+
+start_time = time.time()
+d = [i for i in range(1000000)]
+print(time.time() - start_time)
+

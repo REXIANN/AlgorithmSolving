@@ -3,7 +3,7 @@ from pprint import pprint
 import sys
 sys.stdin = open("14502input.txt", "r")
 # 정답은 1번: 27, 2번: 9, 3번: 3
-import queue
+from collections import deque
 import copy
 from itertools import combinations
 
@@ -14,7 +14,7 @@ N, M = map(int, input().split())
 matrix = [list(map(int, input().split())) for _ in range(N)]
 # print(N, M)
 # pprint(matrix)
-q = queue.Queue()
+dq = deque()
 walls = [(r, c) for r in range(N) for c in range(M) if matrix[r][c] == 0]
 minV = N * M
 result = 0
@@ -28,13 +28,13 @@ for w1, w2, w3 in combinations(walls, 3):
     for r in range(N):
         for c in range(M):
             if matr[r][c] == 2:
-                q.put((r, c))
+                dq.append((r, c))
                 count2 += 1
             elif matr[r][c] == 1:
                 count1 += 1
     
-    while not q.empty():
-        q_rc = q.get()
+    while dq:
+        q_rc = dq.popleft()
         q_r, q_c = q_rc[0], q_rc[1]
         for i in range(4):
             q_rr, q_cc = q_r + dr[i], q_c + dc[i]
@@ -42,7 +42,7 @@ for w1, w2, w3 in combinations(walls, 3):
                 if not matr[q_rr][q_cc]:
                     matr[q_rr][q_cc] = 2
                     count2 += 1
-                    q.put((q_rr, q_cc))
+                    dq.append((q_rr, q_cc))
     safe_area = N * M - count1 - count2
     result = safe_area if safe_area > result else result
 print(result)
