@@ -1,28 +1,32 @@
 import time
-z = (1, 2, 3, 6, 5, 9)
+from itertools import permutations
+a = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+b = [0] * len(a)
+def dfs(k, N):
+    if k == N:
+        return
+    else:
+        for i in range(k):
+            visited[b[i]] = True
+        
+        for i in range(N):
+            if not visited[i]:
+                b[k] = i
+                dfs(k + 1, N)
+                visited[b[k]] = False
+                
 
-a = []
-b = []
-c = []
-d = []
-c_append = c.append
+
+visited  = [False] * len(a)
 
 start_time = time.time()
-for i in range(1000000):
-    a.append(i)
+for i in permutations(a):
+    pass
 print(time.time() - start_time)
 
 start_time = time.time()
-for i in range(1000000):
-    b += [i]
+dfs(0, len(a))
 print(time.time() - start_time)
 
-start_time = time.time()
-for i in range(1000000):
-    c_append(i)
-print(time.time() - start_time)
 
-start_time = time.time()
-d = [i for i in range(1000000)]
-print(time.time() - start_time)
 
