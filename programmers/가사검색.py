@@ -17,7 +17,7 @@ class Trie(object):
             if char not in current_node.children:
                 current_node.children[char] = Node(char, length - idx)
             current_node = current_node.children[char]
-    
+
     
     def str_count(self, string):
         current_node = self.head
@@ -35,6 +35,7 @@ def solution(words, queries):
     t = Trie()
     for word in words:
         t.insert(word)
+
         tr.insert(word[::-1])   
     
     for query in queries:
