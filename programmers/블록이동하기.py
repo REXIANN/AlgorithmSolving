@@ -7,9 +7,6 @@ dr = [-1, 0, 1, 0]
 dc = [0, 1, 0, -1]
 
 
-
-
-
 def solution(board):
     max_move = (len(board[0]) - 1) * 2
     stack = [((0, 0), (0, 1))]

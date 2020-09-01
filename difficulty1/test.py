@@ -1,11 +1,17 @@
-adic = {}
-ls = ['a', 'b', 'c', 'b', 'c', 'k']
+from pprint import pprint
+import sys
+sys.stdin = open("testinput.txt", "r")
 
-for char in ls:
-    if char in adic.keys():
-        adic[char] += 1
-    else:
-        adic[char] = 1
-    
-print(adic)
-print(max(adic.values()))
+answers = [list(map(int, input().split())) for _ in range(20)]
+pprint(answers)
+result = []
+for i in range(0, 20, 2):
+    for j in range(10):
+        result.append((answers[i][j], answers[i + 1][j]))
+print(result)
+result.sort(key=lambda x: x[0] )
+print()
+print(result)
+
+for val in result:
+    print(val[0], val[1])

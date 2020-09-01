@@ -1,32 +1,17 @@
-import time
-from itertools import permutations
-a = [0, 1, 2, 3, 4, 5, 6, 7, 8]
-b = [0] * len(a)
-def dfs(k, N):
-    if k == N:
-        return
-    else:
-        for i in range(k):
-            visited[b[i]] = True
-        
-        for i in range(N):
-            if not visited[i]:
-                b[k] = i
-                dfs(k + 1, N)
-                visited[b[k]] = False
+def solution(n):
+    answer = 0
+    memo = [2]
+    for i in range(2, n + 1):
+        for m in memo:
+            if i % m == 0:
+                break
+        else:
+            memo.append(i)
                 
+    print(memo)
+    return answer
 
-
-visited  = [False] * len(a)
-
-start_time = time.time()
-for i in permutations(a):
-    pass
-print(time.time() - start_time)
-
-start_time = time.time()
-dfs(0, len(a))
-print(time.time() - start_time)
+solution(1000000)
 
 
 
