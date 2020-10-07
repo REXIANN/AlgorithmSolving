@@ -85,4 +85,7 @@ mat[r_r][r_c], mat[b_r][b_c] = '.', '.'
 # pprint(mat)
 minV = 11
 bt(1, 4, r_r, r_c, b_r, b_c)
+
+
+
 print(-1 if minV >= 11 else minV)
