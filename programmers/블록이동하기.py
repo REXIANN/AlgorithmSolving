@@ -11,11 +11,11 @@ def solution(board):
     max_move = (len(board[0]) - 1) * 2
     stack = [((0, 0), (0, 1))]
 
+    # 내일 2트.. 가자..
 
 
 
-
-
+    answer = []
     return answer
 
 print(solution(board))

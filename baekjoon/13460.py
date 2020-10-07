@@ -40,10 +40,7 @@ def bt(k, idx, r_r, r_c, b_r, b_c):
 
         if b_conf == 0:
             continue
-        # if r_conf == 0 and b_conf == 0:
-        #     continue
-        # if r_conf == 1 and b_conf == 0:
-        #     return
+
         if r_conf == 0 and b_conf == 1:
             result = k
         # 만일 두공의 위치가 같으면 r-r, r-c, b-r, b-c 비교하여 위치 재정렬
