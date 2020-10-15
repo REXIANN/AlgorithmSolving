@@ -7,9 +7,8 @@ import copy
 
 R, C, T = map(int, input().split())
 matrix = [[i for i in map(int, input().split())] for _ in range(R)]
-ap_r, ap_r2 = tuple(i for i in range(R) if matrix[i][0])
+ap_r, ap_r2 = tuple(i for i in range(R) if matrix[i][0] == -1)
 
-sum_ = 0
 dr = [-1, 0, 1, 0, 1, 0, -1, 0]
 dc = [0, 1, 0, -1, 0, 1, 0, -1]
 
@@ -21,9 +20,9 @@ for h in range(T):
             matr[i][j] += matrix[i][j]
 
             for k in range(4):
-                if 0 <= i+dr[k] < R and 0 <= j+dc[k] < C and matrix[i+dr[k]][j+dc[k]] != -1:
+                if 0 <= i + dr[k] < R and 0 <= j + dc[k] < C and matrix[i + dr[k]][j + dc[k]] != -1:
                     val = (matrix[i][j] // 5)
-                    matr[i+dr[k]][j+dc[k]] += val
+                    matr[i + dr[k]][j + dc[k]] += val
                     matr[i][j] -= val    
 
     r, c , k = ap_r - 1, 0, 0
@@ -49,8 +48,10 @@ for h in range(T):
     matr[ap_r][0], matr[ap_r2][0] = -1, -1
     matrix = copy.deepcopy(matr)
     
+sum_ = 0
 for i in range(R):
-    sum_ += sum(matr[i])
+  for j in range(C):
+    sum_ += matrix[i][j]
 print(sum_ + 2)
 
 
