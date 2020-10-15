@@ -1,1 +1,5 @@
-print([i for i in range(1, 30)])
+import requests
+a = ['3']
+print(a[0][-1])
+res = requests.get('https://google.com')
+print(type(res.status_code))
