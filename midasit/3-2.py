@@ -14,7 +14,7 @@ def bt(k, cookies, length, arr):
             sec_arr = arr + [cookies[i]]
             bt(i, cookies, length + 1, sec_arr)
 
-                
+              
 def solution(cookies,k):
     for i in range(len(cookies) - 1):
         bt(i, cookies, 1, [cookies[i]]) 
