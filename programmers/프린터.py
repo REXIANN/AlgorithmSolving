@@ -3,9 +3,9 @@ from collections import deque
 def solution(priorities, location):
     dq = deque(priorities)
     count = 0
-    while dq:
+    while True:
         target = dq.popleft()
-        if target < max(dq):
+        if dq and target < max(dq):
             dq.append(target)            
         else:
             count += 1
@@ -14,7 +14,6 @@ def solution(priorities, location):
         location -= 1
         if location < 0:
              location = len(dq) - 1
-        print(dq, location, count)
 
 priorities = [1, 1, 9, 1, 1, 1]
 location = 0
