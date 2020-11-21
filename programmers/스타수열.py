@@ -8,7 +8,7 @@ def solution(a):
     print(frequency)
     
     # 각원소마다 그리디 사용(왼->오, 오->왼 두번 탐색)
-    for freq in frequency:
+    for idx, freq in enumerate(frequency):
         if freq[0] == 0:
             continue
         
@@ -17,20 +17,21 @@ def solution(a):
         star_set = set()
         # 왼쪽
         for f in freq[1]:
-            check = False
-            if f - 1 > 0:
-                if a[f - 1] != freq[0]:
-                    if f - 1 not in start_set:
+            left_check = False
+            right_check = False
+            if f - 1 >= 0:
+                if a[f - 1] != idx:
+                    if f - 1 not in star_set:
                         star_set.add(f - 1)
-                    else:
-                        break
-            elif f + 1 < len(a):
-                if a[f + 1] != freq[0]:
-                    if f + 1 not in start_set:
+                        left_check = True
+                    
+            if not left_check and f + 1 < len(a):
+                if a[f + 1] != idx:
+                    if f + 1 not in star_set:
                         star_set.add(f + 1)
-                    else:
-                        break
-            else:
+                        right_check = True
+
+            if not left_check and not right_check:
                 break
         else:
             answer = freq[0] * 2 if freq[0] * 2 > answer else answer
@@ -39,26 +40,27 @@ def solution(a):
         # 오른쪽. 왼쪽에서 통과하면 할필요 없음
         if left_flag:
             continue
-        right_flage = False
+        star_set = set()
         for f in freq[1]:
-            check = False
-            if f + 1 > len(arr):
-                if not arr[f + 1]:
-                    arr[f + 1] = True
-                    check = True
-            elif f - 1 < 0:
-                if not arr[f - 1]:
-                    arr[f - 1] = True
-                    check = True
-            
-            if not check:
+            left_check = False
+            right_check = False
+            if f + 1 < len(a):
+                if a[f + 1] != idx:
+                    if f + 1 not in star_set:
+                        star_set.add(f + 1)
+                        right_check = True
+            if not right_check and f - 1 >= 0:
+                if a[f - 1] != idx:
+                    if f - 1 not in star_set:
+                        star_set.add(f - 1)
+                        left_check = True
+                    
+
+            if not left_check and not right_check:
                 break
         else:
-            right_flage = True
-        
-        if right_flage:
             answer = freq[0] * 2 if freq[0] * 2 > answer else answer
-    
+            
     return answer
 
 a = [5,2,3,3,5,3]
