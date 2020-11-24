@@ -6,7 +6,7 @@ def solution(numbers):
     
     
     for i in range(len(orders)):
-        orders[i].sort(key = lambda x: x[0] if len(x) == 1 else x[0] if x[1] < x[0] else x[1], reverse = True)
+        orders[i].sort(key = lambda x: x[0] if len(x) == 1 else x[0] if x[1] < x[0] and len(x) == 2 else x[1], reverse = True)
     
     # print(orders)
     result = []
