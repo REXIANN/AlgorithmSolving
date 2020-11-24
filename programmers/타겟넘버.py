@@ -20,3 +20,12 @@ def solution(numbers, target):
     
     
     return dq.count(target)
+
+
+# 데카르트곱을 활용한 풀이
+from itertools import product
+def solution(numbers, target):
+    l = [(x, -x) for x in numbers]
+    print(l)
+    s = list(map(sum, product(*l)))
+    return s.count(target)
