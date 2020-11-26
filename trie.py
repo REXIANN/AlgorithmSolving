@@ -5,12 +5,12 @@ class Node(object):
 
     def __init__(self, key, data=None):
         self.key = key # contains one letter
-        self.dat = data # contains the string only for the last letter.
+        self.data = data # contains the string only for the last letter.
         self.children = {} # contians sequence of string
 
 
 class Trie(object):
-    from collections import deque
+    
 
     def __init__(self):
         self.head = Node(None)
@@ -44,6 +44,7 @@ class Trie(object):
 
     # find the string starts with prefix in Trie
     def find_string(self, prefix):
+        from collections import deque
         current_node = self.head
         result = []
         subtrie = None
@@ -66,3 +67,15 @@ class Trie(object):
                 dq.append(value)
 
         return result
+
+# How to use
+t = Trie()
+t.insert("hello")
+t.insert("world")
+
+a = t.search("hello")
+b = t.search("holl")
+c = t.search("hell")
+d = t.find_string("hell")
+
+print(a, b, c, d)
