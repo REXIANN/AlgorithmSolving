@@ -1,4 +1,6 @@
-SELECT ANIMAL_TYPE, COUNT(ANIMAL_TYPE) AS count FROM ANIMAL_INS
-WHERE ANIMAL_TYPE IN ('Cat', 'Dog') 
-GROUP BY ANIMAL_TYPE
- ORDER BY CASE WHEN ANIMAL_TYPE ='Cat' THEN 1 ELSE 2 END
+SET @HOUR_IT := -1;
+SELECT @HOUR_IT := @HOUR_IT + 1 as hour, 
+    ( select count(*) from animal_outs
+      where hour(datetime) = @HOUR_IT) as count
+from animal_outs
+where @HOUR_IT < 23;
