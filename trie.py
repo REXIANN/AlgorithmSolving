@@ -10,8 +10,6 @@ class Node(object):
 
 
 class Trie(object):
-    
-
     def __init__(self):
         self.head = Node(None)
 
