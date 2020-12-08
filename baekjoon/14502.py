@@ -45,4 +45,5 @@ for w1, w2, w3 in combinations(walls, 3):
                     dq.append((q_rr, q_cc))
     safe_area = N * M - count1 - count2
     result = safe_area if safe_area > result else result
+    
 print(result)

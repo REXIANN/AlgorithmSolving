@@ -20,9 +20,6 @@ for i in range(I):
     print(i+1, "st trial")
     p4 = players[i].pop(0)
     
-    
-    
-
 # start = time.time()
 # print(time.time() - start)
 N = int(input())

@@ -32,6 +32,7 @@ def bfs(i, j, L, R, N):
         matrix[pp[0]][pp[1]] = value
     return 1 if flag > 0 else 0
 
+
 N, L, R = map(int, input().split())
 matrix = [list(map(int, input().split())) for _ in range(N)]
 result = 0
