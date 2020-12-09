@@ -1,5 +1,3 @@
-# 소수찾기
-
 def solution(n):
     answer = 0
     memo = [True] * (n + 1)
