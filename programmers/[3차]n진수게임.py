@@ -17,8 +17,6 @@ def solution(n, t, m, p):
         while stack:
             value = stack.pop()
             memory.append(value)
-    
-    #print(memory)
       
     answer = []
     idx = p - 1

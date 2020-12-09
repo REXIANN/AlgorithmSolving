@@ -11,6 +11,7 @@ def solution(n):
             y = 3
             answer.append('4')
         n = x
+        
     answer.reverse()
     result = ''.join(answer)
     return result

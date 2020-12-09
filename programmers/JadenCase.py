@@ -7,6 +7,7 @@ def solution(s):
             flag = False
         else:
             slist.append(ss.lower())
+        
         if ss == ' ':
             flag = True
             

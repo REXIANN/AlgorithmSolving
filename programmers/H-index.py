@@ -2,7 +2,6 @@ def solution(citations):
     citations.sort(reverse=True)
     max_value = citations[0]
 
-
     while max_value >= 0:
         count = 0
         for i in citations:
