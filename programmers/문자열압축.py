@@ -6,6 +6,7 @@ def solution(s):
         idx = 0
         flag = False
         count = 0
+
         while idx + i <= len(s):
             idx += i
             now = s[idx:idx + i]
@@ -16,10 +17,10 @@ def solution(s):
 
             if prev != now:
                 if flag:
-                    length += 1
+                    length += len(str(count + 1))
                     flag = False
                     count = 0
-            print(idx, prev, now, length)
+            #print(idx, prev, now, length)
             prev = now
         
         if flag:
@@ -30,5 +31,5 @@ def solution(s):
     return min_length
 
 
-s = 'aabbaccc'
+s = 'xxxxxxxxxxyyy'
 print(solution(s))
