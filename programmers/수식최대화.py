@@ -41,5 +41,5 @@ def solution(expression):
     return max_value
 
 
-expression = "100-200*300-500+20"
+expression = "2-990-5+2+3*2"
 print(solution(expression))
