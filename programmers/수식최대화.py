@@ -1,3 +1,8 @@
+from itertools import permutations
+
+def calc(experssion, operand):
+    pass
+
 def solution(expression):
     answer = []
     head, tail = 0, 0
@@ -9,6 +14,8 @@ def solution(expression):
         else:
             head += 1
     answer.append(int(expression[tail:head]))
+    for permutation in permutations('+-*'):
+        print(permutation)
     
     return answer
 
