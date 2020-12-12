@@ -3,18 +3,20 @@ from itertools import permutations
 # define calc function
 def calc(array, operand):
     stack = []
-    array = array[::-1]
-    #print('calc', array, operand)
-    while array:
-        elem = array.pop()
+    idx = 0
+    print('calc', array, operand)
+    while idx < len(array):
+        elem = array[idx]
         if elem == operand:
             first_num = stack.pop()
-            second_num = array.pop()
+            idx += 1
+            second_num = array[idx]
             result = eval(str(first_num) + operand + str(second_num))
             stack.append(result)
         else:
             stack.append(elem)
-    return stack[::-1]
+        idx += 1
+    return stack
 
 
 def solution(expression):
