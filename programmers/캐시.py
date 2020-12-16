@@ -14,9 +14,7 @@ def solution(cacheSize, cities):
             count += 5
             for i in range(len(cache)):
                 if cache[i][1] == city:
-                    cache[i][0] += 1
-
-            
+                    cache[i][0] += 1           
         else:
             count += 1
             if len(cache_set) == cacheSize:
@@ -30,20 +28,5 @@ def solution(cacheSize, cities):
 
 cacheSize = 3	
 cities = ["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "Jeju", "Pangyo", "Seoul", "NewYork", "LA"]	
-# 50
-# cacheSize = 3	
-# cities = ["Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul", "Jeju", "Pangyo", "Seoul"]	
-# # 21
-# cacheSize = 2	
-# cities = ["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"]
-# # 60
-# cacheSize = 5	
-# cities = ["Jeju", "Pangyo", "Seoul", "NewYork", "LA", "SanFrancisco", "Seoul", "Rome", "Paris", "Jeju", "NewYork", "Rome"]
-# # 52
-# cacheSize = 2	
-# cities = ["Jeju", "Pangyo", "NewYork", "newyork"]	
-# # 16
-# cacheSize = 0	
-# cities = ["Jeju", "Pangyo", "Seoul", "NewYork", "LA"]	
-# # 25
+
 print(solution(cacheSize, cities))
