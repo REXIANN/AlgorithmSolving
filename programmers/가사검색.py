@@ -15,11 +15,11 @@ class Trie(object):
         length = len(string)
         for idx, char in enumerate(string):
             if char not in current_node.children:
-                current_node.children[char] = Node(char, length - idx)
+                current_node.children[char] = Node(char, length - idx - 1)
             current_node = current_node.children[char]
 
     
-    def str_count(self, string):
+    def str_count(self, string, count):
         current_node = self.head
         for char in string:
             if char not in current_node.children:
@@ -27,23 +27,28 @@ class Trie(object):
             else:
                 current_node = current_node.children[char]
         
-        return len([key for key in current_node.children.keys()])
+        for key in current_node.children.keys():
+            node = current_node.children[key]
+            print('count', count, 'node_length', node.length)
+        return 1
 
     
 def solution(words, queries):
     answer = []
     t = Trie()
+    tr = Trie()
     for word in words:
         t.insert(word)
-
         tr.insert(word[::-1])   
     
     for query in queries:
         if query[0] == '?':
-            string = query[::-1].replace('?', '')
+            string, count = query[::-1].replace('?', ''), query.count('?')
+            value = tr.str_count(string, count)
         else:
-            string = query.replace('?', '')
-        value = tr.str_count(string)    
+            string, count = query.replace('?', ''), query.count('?')
+            value = t.str_count(string, count) 
+        print(string, count)   
         answer.append(value)
         
     return answer
