@@ -6,6 +6,7 @@ def solution(s):
     stack = []
     while dq:
         now = dq.popleft()
+        
         if not stack:
             stack.append(now)
         else:
