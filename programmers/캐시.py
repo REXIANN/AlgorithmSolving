@@ -14,6 +14,7 @@ def solution(cacheSize, cities):
                     hh[0] += 1
                     break
             count += 1
+        
         else:
             if h:
                 rm = heapq.heappop(h)
