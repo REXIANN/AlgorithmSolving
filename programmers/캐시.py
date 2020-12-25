@@ -4,7 +4,7 @@ def solution(cacheSize, cities):
     h = [[0, 'a'] for _ in range(cacheSize)]
     h_set = set()
     count = 0
-    # heapq를 직접 구현하는게 핵심 
+    # heapq를 직접 구현하는게 핵심  
 
     for city in cities:
         city = city.lower()
