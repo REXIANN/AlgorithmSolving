@@ -1,10 +1,10 @@
 from collections import deque
 
-def bfs(depart, arrive, airports):
+def bfs(depart, airports):
     visited = set()
-
-    visited.add((depart, arrive))
     trips = [(depart, city) for city in airports[depart]]
+    print(trips)
+
     dq = deque([trips])
     print(dq)
 
@@ -31,7 +31,8 @@ def solution(tickets):
         else:
             airports[ticket[0]] = [ticket[1]]
 
-
+    for city in cities:
+        bfs(city, airports)
     
     
     return answer
