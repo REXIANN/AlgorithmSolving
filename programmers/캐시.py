@@ -1,10 +1,30 @@
 from collections import deque
 
 def solution(cacheSize, cities):
-    h = [[0, 0, 'a'] for _ in range(cacheSize)] # 사용빈도, 시간, 값
+    heap = [[0, 0, 'a'] for _ in range(cacheSize)] # 사용빈도, 시간, 값
+    is_heap_empty = True
     
+    for city in cities:
+        city = city.lower()
+        print(city)
+
+        for h in heap:
+            h[1] += 1
+
+        
+        for i in range(cacheSize):
+            if h[i][2] == city:
+                h[i][0] += 1
+                is_heap_empty = False
+                break
+        
+        if is_heap_empty:
+            for i in range(cacheSize):
+                min_value = len(cities)
+                if h[i][1] < 
+
     
-    return count
+    return 1
 
 cacheSize = 2
 
