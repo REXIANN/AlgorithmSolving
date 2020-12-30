@@ -1,29 +1,8 @@
 from collections import deque
 
 def solution(cacheSize, cities):
-    h = [[0, 'a'] for _ in range(cacheSize)]
-    h_set = set()
-    count = 0
-    # heapq를 직접 구현하는게 핵심  
-
-    for city in cities:
-        city = city.lower()
-        if city in h_set:
-            for hh in h:
-                if hh[1] == city:
-                    hh[0] += 1
-                    break
-            count += 1
-        
-        else:
-            if h:
-                rm = heapq.heappop(h)
-                if rm[1] in h_set:
-                    h_set.remove(rm[1])
-            heapq.heappush(h, [1, city])
-            h_set.add(city)
-            count += 5
-        print(h, count)
+    h = [[0, 0, 'a'] for _ in range(cacheSize)] # 사용빈도, 시간, 값
+    
     
     return count
 
