@@ -44,7 +44,6 @@ def solution(cacheSize, cities):
                 else:
                     break
             # print('h', h, 'rm', remove_candidats)
-
             for i in range(len(remove_candidats)):
                 remove_candidats[i][0], remove_candidats[i][1] = remove_candidats[i][1], remove_candidats[i][0]
             # print('chrm', remove_candidats)
