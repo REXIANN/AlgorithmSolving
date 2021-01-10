@@ -1,3 +1,5 @@
+from collections import deque
+
 class Node(object):
     def __init__(self, key, length):
         self.key = key
@@ -27,12 +29,15 @@ class Trie(object):
             else:
                 current_node = current_node.children[char]
         
-        for key in current_node.children.keys():
-            node = current_node.children[key]
-            print('count', count, 'node_length', node.length)
+        count = 0
+        
+        print(current_node)
+        # for key in current_node.children.keys():
+        #     node = current_node.children[key]
+        #     print('count', count, 'node_length', node.length)
         return 1
 
-    
+
 def solution(words, queries):
     answer = []
     t = Trie()
