@@ -16,3 +16,4 @@ const a = 5,
 
 const result = solution(a, b)
 console.log(result)
+
