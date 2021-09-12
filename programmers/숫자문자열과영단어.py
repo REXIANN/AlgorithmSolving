@@ -1,6 +1,7 @@
 def solution(s):
     answer = []
     num_dict = { 
+        'zero': '0',
         'one': '1', 
         'two': '2', 
         'three': '3', 
@@ -25,7 +26,7 @@ def solution(s):
                     index = inner_index
                     break
 
-    return ''.join(answer)
+    return int(''.join(answer))
 
 print(solution("one4seveneight"))
 print(solution("23four5six7"))
