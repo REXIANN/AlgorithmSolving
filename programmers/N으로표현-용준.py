@@ -13,9 +13,11 @@ def solution(N, number):
                     temp[i].add(num1*num2)
                     if num2 != 0:
                         temp[i].add(num1//num2)
+        print(len(temp[i]), 'start', sorted(list(temp[i])))
+        print()
         if number in temp[i]:
             answer = i
             break
     return answer
 
-print(solution(3, 27))
+print(solution(5, 12))
